@@ -22,6 +22,7 @@
 </form>
 
     <p>Listado de autos para reparación</p>
+    <a href="{{route('imprimir')}}" class="btn btn-secondary"> PDF... </a>
     <div class="row">
     @foreach ($autos as $auto)
     <div class="col-sm">
@@ -37,6 +38,7 @@
     <a href="/delete/{{$auto->id}}" class="btn btn-primary">Borrar...</a>
     <a href="/autos/{{$auto->id}}/edit" class="btn-btn-secondary">Editar... </a>
     <a href="/autos/{{$auto->id}}" class="btn btn-secondary"> Entregar... </a>
+    
   </div>
 </div>
 </div>

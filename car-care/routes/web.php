@@ -24,5 +24,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
+Route::name('imprimir')->get('/imprimir', 'AutoController@imprimir');
 
 
