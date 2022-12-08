@@ -140,6 +140,11 @@ class AutoController extends Controller
         else return 'El '.$id. "No se pudo borrar";
         
     }
+    public function pdf(){
+        $autos=Auto::all();
 
+        $pdf = \PDF::loadView('pdf',compact('autos'));
+        return $pdf->download('ejemplo.pdf');
+    }
 
 }
