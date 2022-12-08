@@ -14,9 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('Bienvenido de nuevo es un placer!') }}
-                    <a class="btn btn-primary" href="/autos">Ir a registro y listado de autos </a>
-                </div>
+                    {{ __('Estas dentro!') }}
+                    
+                    
+                </div><a class="btn btn-primary" href="/autos">Ir a listado de autos y registros</a>
             </div>
         </div>
     </div>
