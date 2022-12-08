@@ -22,6 +22,7 @@
 </form>
 
     <p>Listado de autos para reparación</p>
+    <a href="{{route('pdf')}}" class="btn btn-secondary"> Generar listado en PDF </a>
     <div class="row">
     @foreach ($autos as $auto)
     <div class="col-sm">
@@ -31,12 +32,14 @@
         "class="card-img-top rounded mx-auto d-block"
         src='images/{{$auto->foto}}'alt="">
   <div class="card-body">
-    <h5 class="card-title">{{$auto->marca}} {{$auto->modelo}} {{$auto->daño}}</h5>
+    <h5 class="card-title">{{$auto->marca}}  {{$auto->modelo}} </h5>
+    <h6 class="card-title">  {{$auto->daño}}</h6>
+
     
     <p class="card-text">Taller Autoelectrico GARMAR</p>
-    <a href="/delete/{{$auto->id}}" class="btn btn-primary">Borrar...</a>
-    <a href="/autos/{{$auto->id}}/edit" class="btn-btn-secondary">Editar... </a>
-    <a href="/autos/{{$auto->id}}" class="btn btn-secondary"> Entregar... </a>
+    <a href="/delete/{{$auto->id}}" class="btn btn-primary">Borrar</a>
+    <a href="/autos/{{$auto->id}}/edit" class="btn-btn-secondary">Editar</a>
+    <a href="/autos/{{$auto->id}}" class="btn btn-secondary"> Entregar </a>
   </div>
 </div>
 </div>

@@ -1,5 +1,5 @@
-@extends('layouts.app')
-@section('content')
+
+
 
 <table class="table table-hover table-striped">
     <thead>
@@ -26,4 +26,4 @@
         @endforeach
     </tbody>
 </table>
-@endsection
+
