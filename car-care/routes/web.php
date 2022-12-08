@@ -24,5 +24,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
+Route::name('pdf')->get('/pdf', 'AutoController@pdf');
+
+
+
 
 
